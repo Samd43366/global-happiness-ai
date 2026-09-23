@@ -1,0 +1,13 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.git/
+.gitignore
+.pytest_cache/
+tests/
+scratch/
+data/raw/
+*.ipynb_checkpoints/
+demo/
