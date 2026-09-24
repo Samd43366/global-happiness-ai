@@ -115,7 +115,7 @@ Evaluated across **Repeated 5-Fold Cross-Validation** (25 total fits per model) 
 | **XGBoost (Optimized)** | **$0.345 \pm 0.017$** | **$0.448 \pm 0.025$** | **$0.837 \pm 0.016$** | **$0.355$** | **$0.455$** | **$0.838$** |
 
 ### 2.2 Model Failure & Debugging Scenario (Train $R^2 = 0.97$, Test $R^2 = 0.42$)
-A 55-point divergence between training and testing performance indicates severe high-variance overfitting, conditional data leakage, or distribution shift. Our team-lead diagnostic protocol proceeds through 5 phases:
+A 55-point divergence between training and testing performance indicates severe high-variance overfitting, conditional data leakage, or distribution shift. My team-lead diagnostic protocol proceeds through 5 phases:
 
 1. **Conditional / Row-Level Leakage Audit**:
    * *Investigation*: Check if identifiers (e.g., `country`, row indices, unregularized target encodings) leaked into training that allowed the model to memorize outputs.
@@ -147,6 +147,11 @@ The application is built with **Streamlit** and provides two integrated user mod
 ### Option B: AI Data Analyst (Zero-Hallucination Query Engine)
 * Conversational query engine with quick-action prompts (Top 5 Happiest, Regional Rankings, Latin American Paradox, Feature Correlations).
 * Generates grounded, factual answers supported by filtered dataframes and methodology citations.
+
+### 📸 Application Interface Gallery
+| Option A: Policy Simulator & SHAP | Option B: AI Data Analyst | Stage 2 Model Benchmarks |
+| :---: | :---: | :---: |
+| <img src="demo/screenshots/01_policy_simulator_shap.png" width="280"/> | <img src="demo/screenshots/02_ai_data_analyst.png" width="280"/> | <img src="demo/screenshots/03_model_benchmarks_architecture.png" width="280"/> |
 
 ---
 

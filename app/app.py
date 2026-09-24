@@ -114,7 +114,7 @@ def main():
         st.markdown("""
         **Scenario**: *Training $R^2 = 0.97$ vs. Testing $R^2 = 0.42$*
         
-        Our 5-phase diagnostic hierarchy addresses this high-variance divergence:
+        My 5-phase diagnostic hierarchy addresses this high-variance divergence:
         1. **Leakage Audit**: Validate no unique row identifiers (`country`, unregularized target encoding) entered $X_{\text{train}}$.
         2. **Capacity Pruning**: Reduce tree depths (`max_depth=3-5`), introduce shrinkage (`learning_rate=0.04`), and apply leaf constraints.
         3. **Cross-Validation Scope**: Ensure scalers and imputers are strictly encapsulated inside an `sklearn.pipeline.Pipeline`.
